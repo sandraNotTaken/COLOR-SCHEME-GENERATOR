@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    gap: 1rem;
     padding: 1.2rem .7rem;
     height: 42px;
     background-color: var(--header-bg);
@@ -86,5 +87,6 @@ body {
 .color-code {
     text-align: center;
     margin: 10px 0;
-    font-size: 1.2rem;
+    font-size: .9rem;
+    font-weight: 500;
 }
