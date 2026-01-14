@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Scheme Generator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <input type="color" id="colorPicker"/>
+            <select id="schemeType">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button id="getSchemeBtn">Get Color Scheme</button>
+        </header>
+        <main id="colorDisplayArea">
+            <div class="color-swatch" id="color1">
+                <div class="color-display"></div>
+                <div class="color-hex"></div>
+            </div>
+            <div class="color-swatch" id="color2">
+                <div class="color-display"></div>
+                <div class="color-hex"></div>
+            </div>
+            <div class="color-swatch" id="color3">
+                <div class="color-display"></div>
+                <div class="color-hex"></div>
+            </div>
+            <div class="color-swatch" id="color4">
+                <div class="color-display"></div>
+                <div class="color-hex"></div>
+            </div>
+            <div class="color-swatch" id="color5">
+                <div class="color-display"></div>
+                <div class="color-hex"></div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
