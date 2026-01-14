@@ -20,11 +20,26 @@ function fetchInitialColors() {
         colorDisplayArea.innerHTML = "";
         data.colors.forEach(color => {
             colorDisplayArea.innerHTML += `
-                <div class="color-item">
+                <div class="color-item" data-hex="${color.hex.value}">
                     <div class="color-box" style="background-color: ${color.hex.value};"></div>
                     <p class="color-code">${color.hex.value}</p>
                 </div>
             `;
+        });
+
+        const colorItems = document.querySelectorAll('.color-item');
+        colorItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const hexValue = item.getAttribute('data-hex');
+                const p = item.querySelector('.color-code');
+                const originalText = p.textContent;
+                navigator.clipboard.writeText(hexValue).then(() => {
+                    p.textContent = 'Copied!';
+                    setTimeout(() => {
+                        p.textContent = originalText;
+                    }, 1000);
+                }).catch(err => console.log('Error copying to clipboard:', err));
+            });
         });
     })
 }
