@@ -1,8 +1,8 @@
 :root {
     --bg-color: white;
     --text-color: #111827;
-    --header-bg: #f0f0f0;
-    --button-bg: #e0e0e0;
+    --header-bg: #fff;
+    --button-bg: #fff;
     --button-text: black;
     --border-color: #D1D5DB;
 }
@@ -13,13 +13,13 @@
     --header-bg: #1F2937;
     --button-bg: #3D4B60;
     --button-text: white;
-    --border-color: #666;
+    --border-color: #3D4B60;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s, color 0.3s;
@@ -44,7 +44,7 @@ body {
 
 #schemeType{
     width: 57%;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 6px;
     padding: 0 .3rem;
     font-size: .9rem;
@@ -54,10 +54,10 @@ body {
 
 #getSchemeBtn {
     height: 42px;
-    font-size: 1rem;
+    font-size: .9rem;
     cursor: pointer;
     border-radius: 6px;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     background-color: var(--button-bg);
     color: var(--button-text);
 }
