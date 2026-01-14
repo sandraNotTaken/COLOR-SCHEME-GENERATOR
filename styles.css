@@ -1,9 +1,37 @@
+:root {
+    --bg-color: white;
+    --text-color: #111827;
+    --header-bg: #f0f0f0;
+    --button-bg: #e0e0e0;
+    --button-text: black;
+    --border-color: #D1D5DB;
+}
+
+.dark {
+    --bg-color: #1F2937;
+    --text-color: #D5D4D8;
+    --header-bg: #1F2937;
+    --button-bg: #3D4B60;
+    --button-text: white;
+    --border-color: #666;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 1rem 0;
+    padding: 1.2rem .7rem;
     height: 42px;
+    background-color: var(--header-bg);
 }
 
 #colorPicker {
@@ -16,10 +44,12 @@
 
 #schemeType{
     width: 57%;
-    border: 1px solid #D1D5DB;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 0 .3rem;
     font-size: .9rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 #getSchemeBtn {
@@ -27,8 +57,9 @@
     font-size: 1rem;
     cursor: pointer;
     border-radius: 6px;
-    border: 1px solid #D1D5DB;
-    background-color: #fff;
+    border: 1px solid var(--border-color);
+    background-color: var(--button-bg);
+    color: var(--button-text);
 }
 
 #colorDisplayArea {
@@ -56,5 +87,4 @@
     text-align: center;
     margin: 10px 0;
     font-size: 1.2rem;
-    color: #000;
 }

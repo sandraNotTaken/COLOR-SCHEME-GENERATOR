@@ -4,6 +4,10 @@ const getSchemeBtn = document.getElementById("getSchemeBtn");
 const colorDisplayArea = document.getElementById("colorDisplayArea");
 const colorDisplay = document.getElementById("color-display");
 
+document.addEventListener('dblclick', () => {
+    document.body.classList.toggle('dark');
+});
+
 fetchInitialColors()
 
 getSchemeBtn.addEventListener("click", () => {
