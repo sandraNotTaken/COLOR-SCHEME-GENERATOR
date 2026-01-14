@@ -27,7 +27,7 @@ body {
 
 #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     gap: 1rem;
     padding: 1.2rem .7rem;
@@ -51,6 +51,10 @@ body {
     font-size: .9rem;
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+#SchemeType option {
+    text-align: center;
 }
 
 #getSchemeBtn {
@@ -89,4 +93,31 @@ body {
     margin: 10px 0;
     font-size: .9rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #header {
+    }
+    #colorPicker {
+        width: 45px;
+    }
+
+    #schemeType {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    #getSchemeBtn{
+        width: 30%;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    .color-code {
+        font-size: 0.8rem;
+    }
 }
