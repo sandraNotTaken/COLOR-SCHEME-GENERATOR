@@ -13,6 +13,7 @@ fetchInitialColors()
 getSchemeBtn.addEventListener("click", () => {
     fetchInitialColors();
 }).catch(err => console.log('Error fetching color scheme:', err));
+// Fetch and display initial colors
 
 function fetchInitialColors() {
     const colorPicked = colorPicker.value.slice(1);
